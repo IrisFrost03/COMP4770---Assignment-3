@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: KaijuCleaners Michaela template
+  m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.SceneTemplate.SceneTemplateAsset
+  templateScene: {fileID: 102900000, guid: 34841920c2fed1c4b8897fd209414078, type: 3}
+  templateName: 
+  description: 
+  preview: {fileID: 0}
+  dependencies:
+  - dependency: {fileID: 2100000, guid: ad5a2c359444a1b449913c050dc3d8bc, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: 929e003857a2b71458cf527958a29c3b, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 11400000, guid: a4dc4f2f48451674eaf299cc8d061668, type: 2}
+    instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: beb9799e2e2444468a16afd493df4cf2, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: 9902a2f7a4fcd4ad7a6abb61b2404054, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 2100000, guid: 85450e951d60dc54b9a808428a5e1595, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 6b44da38f5bca4de89950128f81bf718, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 2100000, guid: 3be1017265175e8479f174794c3426ae, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 691020a9e265f4d9ea7248084d4dde1e, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 11400000, guid: 07f80355a54f4ca49bab1a892656256a, type: 2}
+    instantiationMode: 1
+  templatePipeline: {fileID: 0}
+  badge: {fileID: 0}
+  addToDefaults: 0
