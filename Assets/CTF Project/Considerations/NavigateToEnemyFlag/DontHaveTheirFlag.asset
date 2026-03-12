@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DontHaveTheirFlag
   m_EditorClassIdentifier: com.kaijusolutions.agents.utility::KaijuSolutions.Agents.Utility.KaijuBooleanConsideration
   key: TeamCapturingFlag
-  invert: 0
+  invert: 1

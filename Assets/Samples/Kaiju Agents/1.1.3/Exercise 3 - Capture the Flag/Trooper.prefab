@@ -541,7 +541,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7329593620247676017}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 891294a9c7f170b4d9140556630b0c7d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -554,9 +554,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &8690661468545789904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,7 +575,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 48eca6d5dd51e5644a66c59ff22d7ff9, type: 2}
   - {fileID: 11400000, guid: 3c6654583544fc94b9a5374737b3b21b, type: 2}
   - {fileID: 11400000, guid: b9749ed8691a40d4cb2f35571310206d, type: 2}
-  - {fileID: 11400000, guid: 11114ceda0da7ff44a8cfca4f67b7a30, type: 2}
+  - {fileID: 11400000, guid: 397142559c5020b4bb442303df5b3c92, type: 2}
   - {fileID: 11400000, guid: 397142559c5020b4bb442303df5b3c92, type: 2}
   <Agent>k__BackingField: {fileID: 6190703363887382500}
 --- !u!1 &8630997091936437483
