@@ -23,10 +23,36 @@ public class NavigateAction : KaijuUtilityAction
     /// <param name="brain">The <see cref="KaijuUtilityBrain"/> this is for.</param>
     public override void Enter([NotNull] KaijuUtilityBrain brain)
     {
-        Component c = brain.Get<Component>(target);
-        if (c)
+        try
         {
-            brain.Agent.PathFollow(c, clear: true);
+            Component c = brain.Get<Component>(target);
+            if (c)
+            {
+                brain.Agent.PathFollow(c, clear: true);
+            }
+            return;
+        }
+        catch {
+            // Ignored.
+        }
+        
+        try
+        {
+            Vector2 t = brain.Get<Vector2>(target);
+            brain.Agent.PathFollow(t, clear: true);
+            return;
+        }
+        catch {
+            // Ignored.
+        }
+        
+        try
+        {
+            Vector3 t = brain.Get<Vector3>(target);
+            brain.Agent.PathFollow(t, clear: true);
+        }
+        catch {
+            // Ignored.
         }
     }
 }

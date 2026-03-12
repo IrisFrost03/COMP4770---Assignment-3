@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: EnemyActivelyCapturing
   m_EditorClassIdentifier: com.kaijusolutions.agents.utility::KaijuSolutions.Agents.Utility.KaijuBooleanConsideration
   key: EnemyCapturingFlag
-  invert: 1
+  invert: 0

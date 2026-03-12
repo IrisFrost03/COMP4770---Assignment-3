@@ -18,14 +18,14 @@ public class TrooperBrain : KaijuUtilityBrain {
             SetBool("HasAmmo", trooper.HasAmmo); // If we currently have ammo. Can use this when seeing if we can consider attacking.
             SetBool("CanAttack", trooper.CanAttack);  // If we are currently able to attack, meaning the weapon is not on cooldown. Can use this when seeing if we can consider attacking.
             SetBool("TeamOne", trooper.TeamOne);  // Store what team we are on.
-            Set("EnemyFlag", trooper.TeamOne ? Flag.TeamTwoFlag : Flag.TeamOneFlag);  // The enemy flag. Can potentially try to navigate to this to pick it up, in which case we navigate towards the enemy flag.
-            Set("TeamFlag", trooper.TeamOne ? Flag.TeamOneFlag : Flag.TeamTwoFlag);  // Our team's flag. Can potentially try to navigate to this to recover it, in which case we navigate towards our flag.
-            SetBool("HasFlag", trooper.FlagPosition.childCount > 0);  // If we are carrying the enemy flag. Can use this to help consider if we should head back to our base with the enemy's flag.
-            SetBool("FlagAtBase", Flag.Base(trooper.TeamOne) == (trooper.TeamOne ? Flag.TeamOneFlag.Position : Flag.TeamTwoFlag.Position));  // If our flag is at our base. Can use this to potentially make a high priority to chase down the enemy which captured our flag, in which case we navigate towards our flag.
-            SetBool("TeamCapturingFlag", (trooper.TeamOne ? Flag.TeamTwoFlag : Flag.TeamOneFlag).Parent != null);  // Boolean to see if someone on our team is currently carrying the enemy's flag. Could maybe use this to see if our team already is collecting it and thus we can focus on something else.
-            SetBool("EnemyCapturingFlag", (trooper.TeamOne ? Flag.TeamOneFlag : Flag.TeamTwoFlag).Parent != null);  // Boolean to see if someone on the enemy team is currently carrying our team's flag. Can use this to potentially make a high priority to chase down the enemy which captured our flag, in which case we navigate towards our flag.
-            SetFloat("TeamFlagDistance", Position.Distance(trooper.TeamOne ?  Flag.TeamOneFlag.Position : Flag.TeamTwoFlag.Position));  // The distance from us to our team's flag. Could maybe be useful in knowing if we should try to recover it.
-            SetFloat("EnemyFlagDistance", Position.Distance(trooper.TeamOne ?  Flag.TeamTwoFlag.Position : Flag.TeamOneFlag.Position));  // The distance from us to the enemy team's flag. Could be useful in deciding if we should try to capture the enemy's flag.
+            Set("EnemyFlag", trooper.EnemyFlag);  // The enemy flag. Can potentially try to navigate to this to pick it up, in which case we navigate towards the enemy flag.
+            Set("TeamFlag", trooper.TeamFlag);  // Our team's flag. Can potentially try to navigate to this to recover it, in which case we navigate towards our flag.
+            SetBool("HasFlag", trooper.HasFlag);  // If we are carrying the enemy flag. Can use this to help consider if we should head back to our base with the enemy's flag.
+            SetBool("FlagAtBase", Flag.AtBase(trooper.TeamFlag));  // If our flag is at our base. Can use this to potentially make a high priority to chase down the enemy which captured our flag, in which case we navigate towards our flag.
+            SetBool("TeamCapturingFlag", Flag.BeingCarried(trooper.TeamFlag));  // Boolean to see if someone on our team is currently carrying the enemy's flag. Could maybe use this to see if our team already is collecting it and thus we can focus on something else.
+            SetBool("EnemyCapturingFlag", Flag.BeingCarried(trooper.EnemyFlag));  // Boolean to see if someone on the enemy team is currently carrying our team's flag. Can use this to potentially make a high priority to chase down the enemy which captured our flag, in which case we navigate towards our flag.
+            SetFloat("TeamFlagDistance", trooper.DistanceTeamFlag);  // The distance from us to our team's flag. Could maybe be useful in knowing if we should try to recover it.
+            SetFloat("EnemyFlagDistance", trooper.DistanceEnemyFlag);  // The distance from us to the enemy team's flag. Could be useful in deciding if we should try to capture the enemy's flag.
             Set("BasePosition", Flag.Base(trooper.TeamOne));  // The location of our base. If we have the flag, we should have a high desire to move here.
             
             // Nearest health detect.
