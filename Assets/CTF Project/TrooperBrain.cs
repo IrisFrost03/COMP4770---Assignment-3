@@ -4,11 +4,16 @@ using KaijuSolutions.Agents.Utility;
 
 public class TrooperBrain : KaijuUtilityBrain {
     private Trooper trooper;
+    //private float aggressionMultiplier; // Custom Multiplier
 
     protected new void Awake() {
         base.Awake();
         trooper = GetComponent<Trooper>();
+
+        //aggressionMultiplier = UnityEngine.Random.Range(0.7f, 1.3f); //Agression multiplier!
     }
+
+
 
     protected override void UpdateBlackboard() {
         if (trooper != null) {
@@ -69,6 +74,8 @@ public class TrooperBrain : KaijuUtilityBrain {
                 SetFloat("EnemyDistance", float.MaxValue);
                 Set("NearestEnemy", null);
             }
+
+            //SetFloat("Aggression", aggressionMultiplier);
         }
     }
 }
