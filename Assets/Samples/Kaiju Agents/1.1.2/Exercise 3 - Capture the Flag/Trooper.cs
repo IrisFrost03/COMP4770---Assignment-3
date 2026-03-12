@@ -401,18 +401,17 @@ namespace KaijuSolutions.Agents.Exercises.CTF
             
             // Assign to the correct team.
             Active.Add(this);
-            if (TeamOne)
-            {
+            if (TeamOne) {
                 ActiveTwo.Remove(this);
                 ActiveOne.Add(this);
             }
-            else
-            {
+            else {
                 ActiveOne.Remove(this);
                 ActiveTwo.Add(this);
             }
+            _blaster = Agent.GetActuator<BlasterActuator>();
         }
-        
+
         /// <summary>
         /// This function is called when the behaviour becomes disabled.
         /// </summary>

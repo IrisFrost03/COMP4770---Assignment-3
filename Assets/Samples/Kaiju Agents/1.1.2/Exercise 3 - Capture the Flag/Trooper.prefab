@@ -355,7 +355,6 @@ GameObject:
   - component: {fileID: 4870737036990700035}
   - component: {fileID: 4490659907814455891}
   - component: {fileID: 5038185696145083086}
-  - component: {fileID: 8680341711520651676}
   - component: {fileID: 6190703363887382500}
   - component: {fileID: 7087164895181098875}
   - component: {fileID: 3149615042812917083}
@@ -416,28 +415,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: com.kaijusolutions.agents.exercises.ctf::KaijuSolutions.Agents.Exercises.CTF.Trooper
   agent: {fileID: 6190703363887382500}
   <FlagPosition>k__BackingField: {fileID: 7447423002306824928}
---- !u!114 &8680341711520651676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7329593620247676017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5459ad8eabd24c1b9be53854c65f3c2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: com.kaijusolutions.agents.exercises.ctf::KaijuSolutions.Agents.Exercises.CTF.BlasterActuator
-  charge: 0
-  cooldown: 0
-  range: 3.4028235e+38
-  mask:
-    serializedVersion: 2
-    m_Bits: 51
-  triggers: 0
-  checkParents: 1
-  lineRenderer: {fileID: 0}
-  visible: 1
 --- !u!114 &6190703363887382500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,7 +575,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 48eca6d5dd51e5644a66c59ff22d7ff9, type: 2}
   - {fileID: 11400000, guid: 3c6654583544fc94b9a5374737b3b21b, type: 2}
   - {fileID: 11400000, guid: b9749ed8691a40d4cb2f35571310206d, type: 2}
-  - {fileID: 11400000, guid: 397142559c5020b4bb442303df5b3c92, type: 2}
+  - {fileID: 11400000, guid: 11114ceda0da7ff44a8cfca4f67b7a30, type: 2}
   - {fileID: 11400000, guid: 397142559c5020b4bb442303df5b3c92, type: 2}
   <Agent>k__BackingField: {fileID: 6190703363887382500}
 --- !u!1 &8630997091936437483
