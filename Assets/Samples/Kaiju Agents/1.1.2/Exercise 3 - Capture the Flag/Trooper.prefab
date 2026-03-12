@@ -595,6 +595,10 @@ MonoBehaviour:
   actions:
   - {fileID: 11400000, guid: 6f525ebdcd81e334e92bb71610399334, type: 2}
   - {fileID: 11400000, guid: 414b4e455913c4c43a98fb71a2beed95, type: 2}
+  - {fileID: 11400000, guid: 48eca6d5dd51e5644a66c59ff22d7ff9, type: 2}
+  - {fileID: 11400000, guid: 3c6654583544fc94b9a5374737b3b21b, type: 2}
+  - {fileID: 11400000, guid: b9749ed8691a40d4cb2f35571310206d, type: 2}
+  - {fileID: 11400000, guid: 397142559c5020b4bb442303df5b3c92, type: 2}
   - {fileID: 11400000, guid: 397142559c5020b4bb442303df5b3c92, type: 2}
   <Agent>k__BackingField: {fileID: 6190703363887382500}
 --- !u!1 &8630997091936437483
